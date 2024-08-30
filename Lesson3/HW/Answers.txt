@@ -1,0 +1,63 @@
+Sakila Database:
+
+1) Which actors have the first name ‘Scarlett’?
+select * from actor where first_name = 'scarlett';
+
+2) Which actors have the last name ‘Johansson’?
+select * from actor where last_name = 'Johansson';
+
+3) Which last names are not repeated?
+select last_name from actor group by last_name having count(last_name) = 1;
+
+4) Which last names appear more than once?
+select last_name, count(last_name) from actor group by last_name having count(last_name) > 1;
+
+5) What is the average running time of all the films in the sakila DB?
+select avg(length) from film;
+
+6) How many drama films exist in the database? (Use only the film table for this exercise)
+
+
+7) How many action films exist in the database? (Use only the film table for this exercise)
+
+8) Create a query returning 1 if there are more action films, and 0 if there are more drama
+films (Use only the film table for this exercise)
+9) How many customers are not active?
+10)Write a query that would remove all non-active customers (just write, do not execute, or
+execute on a copy of the schema)
+11) How many people are working at the store? (Hint: check the staff table)
+12)How many Actors are named "Dan"?
+13)Show all the actors whose first name begins with "D".
+14)Create a query that returns 1 if there's an even number of actors that start with "D", and
+0 if there's an odd number of actors that start with "D".
+15)How many actors have a 3 letter first name?
+16)Show all the actors with a 4 letter first name that ends with "A"
+17) What film Categories have "m" anywhere in their name?
+Northwind Database:
+● "install" the database by running the northwind.sql and northwind-data.sql
+● NOTE: it will drop and recreate a schema called "northwind" if you wish to use a different
+schema, edit the schema name used for "drop" and "use" queries.
+1) How many suppliers are part of marketing?
+2) (without using joins) can you find out how many orders were executed by Nancy
+Freehafer?
+3) Inspect the product table:
+a) In what ways can you see the DDL query to create the table?
+b) What is the primary key of the table?
+c) Which columns cannot be set to NULL?
+4) The 'Northwind Traders Fruit Cocktail' has been discontinued. Write a query that would
+mark it as such.
+5) Write a query that would discontinue all the pasta products.
+6) We need to find which products require restocking. (Hint: find which products have more
+"on order" than "in stock")
+7) Of these products which one requires the most units ordered (for each product with less
+in stock then on order, you would need to order enough to fill the order, which product
+will the require the largest number?)
+8) Which products cost $30 or More?
+9) Find the profit for each unit of each product. (check the cost vs. the listed price)
+10) What is the average unit profit?
+11) What query would raise the price of all products by about 5 percent (i.e if a product costs
+$100 it will raise to $105 if a product costs $25 it will raise to $30 etc)
+12) How many canned products are there?
+13) Count all the products that are limited to a minimum reorder quantity
+14) EXTRA: Count all the products that are not limited to a minimum reorder quantity
+15) EXTRA: How many orders haven't been shipped yet?

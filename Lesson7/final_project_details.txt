@@ -1,0 +1,12 @@
+Lesson 6 ->  Classwork -> mysql_final_project_01.zip
+See details in the PDF in the zip
+(the sql inside is for inserting for testing purposes)
+
+Due Date: 2024-03-10
+(10 למרץ 2024)
+Send to Email: shmuel@rt-ed.co.il
+Title: SQL 2023-12 PROJECT FNAME LNAME
+(replace FNAME LNAME with your name in english)
+Body: recommended to add your ID
+Attach: the .sql files  (1.sql, 2.sql ... etc)
+
